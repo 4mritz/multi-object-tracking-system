@@ -80,3 +80,6 @@ notebooks/*.ipynb
 # =========================
 *.tmp
 *.swp
+
+
+data/

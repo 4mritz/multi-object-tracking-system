@@ -1,4 +1,5 @@
 import cv2
+from core.tracking import tracker
 from core.tracking.tracker import MultiObjectTracker
 from models.detection.yolo import YOLODetector
 
@@ -16,7 +17,7 @@ def run(video_path):
         detections = detector.detect(frame)
 
         tracker.predict()
-        tracker.update(detections)
+        tracker.update(frame, detections)  
 
         for track in tracker.get_active_tracks():
             x1, y1, x2, y2 = map(int, track.bbox)
