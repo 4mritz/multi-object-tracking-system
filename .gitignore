@@ -1,0 +1,82 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# =========================
+# Virtual Environments
+# =========================
+venv/
+.env/
+.envrc
+cvision/
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# OS / Editor
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# =========================
+# Model Weights (IMPORTANT)
+# =========================
+*.pt
+*.pth
+*.onnx
+*.engine
+
+# If you later download YOLO weights
+models/detection/*.pt
+
+# =========================
+# Data (Heavy Files)
+# =========================
+data/raw/*
+data/processed/*
+
+# Keep folder structure
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# =========================
+# Results / Outputs
+# =========================
+results/videos/*
+results/logs/*
+results/plots/*
+
+# Keep structure
+!results/videos/.gitkeep
+!results/logs/.gitkeep
+!results/plots/.gitkeep
+
+# =========================
+# Notebooks Outputs
+# =========================
+notebooks/*.ipynb
+
+# Optional: keep notebook but strip outputs manually if needed
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Temporary Files
+# =========================
+*.tmp
+*.swp
