@@ -17,6 +17,10 @@ class MultiObjectTracker:
         self.max_age = max_age
         self.min_hits = min_hits
 
+    def predict(self):   
+        for track in self.tracks:
+            track.predict(self.kf)
+
     def update(self, frame, detections):
         measurements = [xyxy_to_cxcywh(det) for det in detections]
 
